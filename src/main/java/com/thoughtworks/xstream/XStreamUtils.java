@@ -19,6 +19,7 @@ import java.io.Writer;
 
 import com.thoughtworks.xstream.io.HierarchicalStreamDriver;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
+import com.thoughtworks.xstream.io.binary.BinaryStreamDriver;
 import com.thoughtworks.xstream.io.json.FastJsonStreamDriver;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
@@ -114,6 +115,9 @@ public class XStreamUtils {
 		}
 		else if(Drivers.XOM_DRIVER.equalsIgnoreCase(driver)){
 			streamDriver = new XomDriver();
+		}
+		else if(Drivers.BINARY_DRIVER.equalsIgnoreCase(driver)){
+			streamDriver = new BinaryStreamDriver();
 		}
 		
 		return streamDriver;

@@ -17,6 +17,8 @@ package com.thoughtworks.xstream;
 
 public class Drivers {
 
+	public static final String BINARY_DRIVER = "binary";
+	
 	public static final String JSON_DRIVER = "json";
 	public static final String JETTISON_DRIVER = "jettison";
 	public static final String FASTJSON_DRIVER = "fastjson";
@@ -42,6 +44,5 @@ public class Drivers {
 	public static final String WSTX_DRIVER = "wstx";
 	
 	public static final String XOM_DRIVER = "xom";
-	
 	
 }
